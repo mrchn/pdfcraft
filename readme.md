@@ -8,7 +8,7 @@
 
 ### SETUP
 ```
-pip install pdfcraft
+pip install pdfcraft-mrchn
 ```
 
 ### FEATURES
@@ -39,7 +39,7 @@ generator.batch_process(data_list, out_dir='output')
 
 ### УСТАНОВКА
 ```
-pip install pdfcraft
+pip install pdfcraft-mrchn
 ```
 
 ### ВОЗМОЖНОСТИ
