@@ -1,4 +1,4 @@
-# pdfcraft 0-1-1 19-04-2026 by mrchn
+# pdfcraft 0-1-2 19-04-2026 by mrchn
 
 TEMPLATE_PATH, TOKEN_HEX_LENGTH = 'template.docx', 2
 COLOR_LOG, COLOR_ERR, COLOR_SUCCESS, COLOR_RESET = '\033[94m', '\033[91m', '\033[92m', '\033[0m'
@@ -49,7 +49,7 @@ def generate_signature_hash(user_id, contract_id, date, SECRET_SALT):
 	data_string = f'{user_id}:{contract_id}:{date}:{SECRET_SALT}'
 	return hashlib.sha256(data_string.encode('utf-8')).hexdigest().upper()
 
-class Сonvert: # res = Сonvert().process('document1.docx', out='document2.pdf', via='docx2pdf') or res = Сonvert().process('doc.docx')
+class Convert: # res = Сonvert().process('document1.docx', out='document2.pdf', via='docx2pdf') or res = Сonvert().process('doc.docx')
 	def __init__(self, remove_in=False, logging=False):
 		self.cmd, self.docx2pdf, self.remove_in, self.logging = CMD(process='convert'), None, remove_in, logging
 
