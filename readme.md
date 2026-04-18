@@ -1,29 +1,28 @@
-# pdfcraft
+# pdfcraft by mrchn (студия мрачно)
 
 [english](#english) | [русский](#русский)
 
 <a name='english'></a>
 
-**pdfcraft** is a lightweight and powerful python3 library designed for automated generation of pdf documents from Microsoft Word (.docx) templates. It handles templating, conversion, and batch processing, making it ideal for automating contracts, invoices, and reports.
+**pdfcraft** is a lightweight and powerful python3 library designed for automated generation of pdf documents from microsoft word (.docx) templates. it handles templating, conversion, and batch processing, making it ideal for automating contracts, invoices, and reports.
 
-### SETUP
+### setup
 ```
 pip install pdfcraft-mrchn
 ```
 
-### FEATURES
-* **Template Rendering:** Uses `docxtpl` to populate Word documents with dynamic data.
-* **Flexible Conversion:** Supports both `docx2pdf` (Windows-optimized) and LibreOffice (cross-platform).
-* **Batch Processing:** Handles large datasets with parallel execution (multiprocessing).
-* **Robustness:** Includes data validation, error handling, and dry-run mode.
-* **Archival Ready:** Supports PDF/A-1b export for long-term storage.
+### features
+* **template rendering:** uses `docxtpl` to populate word (.docx) documents with dynamic data.
+* **flexible conversion:** supports both `docx2pdf` (windows-optimized) and libreoffice (cross-platform).
+* **batch processing:** handles large datasets with parallel execution (multiprocessing).
+* **robustness:** includes data validation, error handling, and dry-run mode.
+* **archival-ready:** supports PDF/A-1b export for long-term storage.
 
-### QUICK START
+### quick start
 ```python
 from pdfcraft import Generate
 
-# initialize
-generator = Generate(logging=True)
+generator = Generate(logging=True) # initialize
 
 # generate a single document
 generator.process({'name': 'John Doe', 'id': '001'}, out_path='contract_001.pdf')
@@ -35,21 +34,21 @@ generator.batch_process(data_list, out_dir='output')
 
 <a name='русский'></a>
 
-**pdfcraft** — это лёгкая и мощная библиотека python3 для автоматической генерации pdf-документов из шаблонов Microsoft Word (.docx). Она берёт на себя заполнение шаблонов, конвертацию и массовую обработку, что делает её идеальной для создания договоров, счетов и отчетов.
+**pdfcraft** — это лёгкая и мощная библиотека python3 для автоматической генерации pdf-документов из шаблонов microsoft word (.docx). она берёт на себя заполнение шаблонов, конвертацию и массовую обработку, что делает её идеальной для создания договоров, счетов и отчетов.
 
-### УСТАНОВКА
+### установка
 ```
 pip install pdfcraft-mrchn
 ```
 
-### ВОЗМОЖНОСТИ
-* **Заполнение шаблонов:** Использует `docxtpl` для вставки динамических данных в документы Word.
-* **Гибкая конвертация:** Поддержка `docx2pdf` (для Windows) и LibreOffice (кроссплатформенно).
-* **Массовая обработка:** Обработка больших наборов данных с поддержкой параллельных вычислений (multiprocessing).
-* **Надежность:** Валидация данных, обработка ошибок и режим тестирования (dry-run).
-* **Архивное качество:** Поддержка экспорта в формат PDF/A-1b.
+### возможности
+* **заполнение шаблонов:** использует `docxtpl` для вставки динамических данных в документы word (.docx).
+* **гибкая конвертация:** поддержка `docx2pdf` (для windows) и libreoffice (кроссплатформенно).
+* **массовая обработка:** обработка больших наборов данных с поддержкой параллельных вычислений (multiprocessing).
+* **надежность:** валидация данных, обработка ошибок и режим тестирования (dry-run).
+* **архивное качество:** поддержка экспорта в формат PDF/A-1b.
 
-### БЫСТРЫЙ СТАРТ
+### начало работы
 ```python
 from pdfcraft import Generate
 
