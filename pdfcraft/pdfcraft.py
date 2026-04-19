@@ -127,7 +127,7 @@ class Generate: # res = Generate().process(data, in_path='document1.docx', out_p
 			tpl = self.docxtpl.DocxTemplate(str(in_path)) ; tpl.render(data) ; tpl.save(str(path_docx))
 			res = self.converter.process(str(path_docx), out=str(target_path))
 			if res:
-				if self.logging and batch is False: self.cmd.log(f'generated in {str(time.time() - start_time:.2f)}s, path: {str(res)}')
+				if self.logging and batch is False: self.cmd.log(f'generated in {time.time() - start_time:.2f}s, path: {str(res)}')
 				return str(res)
 			else: return None
 		except Exception as e:
