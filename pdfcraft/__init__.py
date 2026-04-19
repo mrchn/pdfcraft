@@ -1,1 +1,1 @@
-from .pdfcraft import Generate, Сonvert, Contracts, Client
+from .pdfcraft import Generate, Convert, Contracts, Client
