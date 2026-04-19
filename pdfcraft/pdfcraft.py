@@ -1,4 +1,4 @@
-# pdfcraft 0-1-3 19-04-2026 by mrchn
+# pdfcraft 0-1-4 19-04-2026 by mrchn
 
 import importlib, os, sys, hashlib, datetime, secrets, subprocess, platform, time, concurrent.futures, dataclasses
 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) ; TEMPLATE_PATH = os.path.join(BASE_DIR, 'template.docx')
